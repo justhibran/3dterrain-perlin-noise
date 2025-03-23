@@ -1,7 +1,8 @@
+let input = document.getElementById('scale');
 let sqr = 600;
 let w = parseFloat(sqr);
 let h = parseFloat(sqr);
-let scl = 15;
+let scl = 20;
 let cols = w/scl;
 let rows = h/scl;
 let terrainZ =[];
@@ -29,6 +30,9 @@ function draw() {
  rotateX(PI/3)
  frameRate(120);
  translate(-w/2,-h/2)
+ console.log(input);
+ 
+ scl = input.value;
  for (let y = 0; y < rows; y++) {
    beginShape(TRIANGLE_STRIP);
    for (let x = 0; x < cols; x++) {
