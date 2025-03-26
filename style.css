@@ -5,9 +5,11 @@ html, body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #000;
+  background-color: #fbfbfb;
+  flex-wrap: wrap;
 }
 
 canvas {
   display: block;
+  
 }
